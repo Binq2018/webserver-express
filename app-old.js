@@ -1,3 +1,4 @@
+//Se dejo de utilizar este archivo
 const http = require('http');
 
 http.createServer((req, res) => {
@@ -6,14 +7,15 @@ http.createServer((req, res) => {
 
         let salida = {
             nombre: 'Luis',
-            edad: 35,
+            edad: 37,
             url: req.url
         }
 
         res.write(JSON.stringify(salida));
-        //res.write('Hola Mundo');
+
         res.end();
     })
     .listen(8080);
 
-console.log('Escuchando el puerto 8080');
+console.log('Escuchando el puerto 8080 y listo para ejecutar');
+console.log("Terminado el archivo app.old.js");
